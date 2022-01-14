@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="font/flaticon.css"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style2.css"> 
+<link href="https://fonts.googleapis.com/css?family=El Messiri&display=swap" rel="stylesheet"></link>
+
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet"></link>
+
+</head>
+
+
+<body>
+
+<div class="mobile-container ">
+
+<div class="card">
+
+  <div class="container-fluid scal">
+  <img src="" alt="Denim Jeans" style="width:100%" id="myImage" class="card__image loading">
+
+   <i class="flaticon-right-arrow-angle btn" onclick="goBack()"></i>
+
+</div>
+
+  <h3 id="title"></h3>
+
+ <div id="textbox">
+                     <p class="alignleft" id="kal"></p>
+                     <p class="alignright" id="price"></p>
+                       <p class="aligncenter" id="price2"></p>
+                         </div>
+
+  <p class="det" id="dt"></p>
+ <p class="det" id="dt-en"></p>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+var loc=localStorage.getItem("storageName");
+
+ 
+   switch(loc) {
+
+
+
+   case "vii":
+
+   document.getElementById("myImage").src = "images/drip/vv60.jpg";
+   document.getElementById("title").innerHTML = " ڤي 60";
+   document.getElementById("price2").innerHTML = "15.00 SR";
+
+   break;
+
+    
+
+   case "fll":
+
+   document.getElementById("myImage").src = "images/hot/latt.jpg";
+   document.getElementById("title").innerHTML = "لاتيه حار";
+   document.getElementById("price2").innerHTML = "15.00 SR";
+
+   break;
+
+
+   case "ess":
+
+   document.getElementById("myImage").src = "images/hot/flatt.jpg";
+   document.getElementById("title").innerHTML = "فلات وايت";
+   document.getElementById("price2").innerHTML = "14.00 SR";
+
+   break;
+
+
+   case "trfzz":
+
+   document.getElementById("myImage").src = "images/hot/latt.jpg";
+   document.getElementById("title").innerHTML = "سبانش حار";
+   document.getElementById("price2").innerHTML = "16.00 SR";
+   break;
+       
+   case "amm":
+   document.getElementById("myImage").src = "images/hot/kabb.jpg";
+   document.getElementById("title").innerHTML = "كابتشينو";
+   document.getElementById("price2").innerHTML = "15.00 SR";
+   break;
+
+   case "hh1":
+   document.getElementById("myImage").src = "images/hot/latt.jpg";
+   document.getElementById("title").innerHTML = "وايت موكا حار";
+   document.getElementById("price2").innerHTML = "16.00 SR";
+   break;
+
+   case "hh2":
+   document.getElementById("myImage").src = "images/hot/korr.jpg";
+   document.getElementById("title").innerHTML = "كورتادو";
+   document.getElementById("price2").innerHTML = "13.00 SR";
+   break;
+
+   case "hh3":
+   document.getElementById("myImage").src = "images/hot/espp.jpg";
+   document.getElementById("title").innerHTML = "اسبريسو";
+   document.getElementById("price2").innerHTML = "8.00 SR";
+   break;
+/*cold*/
+
+
+   case "cproo":
+
+   document.getElementById("myImage").src = "images/cold/latt.jpg";
+   document.getElementById("title").innerHTML = "ايس لاتيه";
+   document.getElementById("price2").innerHTML = "16.00 SR";
+   break;
+
+   case "cprr":
+
+   document.getElementById("myImage").src = "images/cold/spp.jpg";
+   document.getElementById("title").innerHTML = "ايس سبانش";
+   document.getElementById("kal").innerHTML = "0 kal";
+   document.getElementById("price").innerHTML = "17.00 SR";
+   break;
+
+   case "csvv":
+
+   document.getElementById("myImage").src = "images/cold/icee.jpg";
+   document.getElementById("title").innerHTML = "ايس أجراس";
+
+   document.getElementById("price2").innerHTML = "18.00 SR";
+   break;
+
+
+   case "cree":
+
+   document.getElementById("myImage").src = "images/cold/spp.jpg";
+   document.getElementById("title").innerHTML = "ايس وايت موكا";
+   document.getElementById("price2").innerHTML = "17.00 SR";
+   break;
+
+   case "cc2":
+
+   document.getElementById("myImage").src = "images/cold/pss.jpg";
+   document.getElementById("title").innerHTML = "ايس بستاشيو";
+   document.getElementById("price2").innerHTML = "17.00 SR";
+   break;
+
+
+   case "cc3":
+
+   document.getElementById("myImage").src = "images/cold/amm.jpg";
+   document.getElementById("title").innerHTML = "ايس أمريكانو";
+   document.getElementById("price2").innerHTML = "11.00 SR";
+   break;
+
+   case "cc4":
+
+   document.getElementById("myImage").src = "images/cold/bshh.jpg";
+   document.getElementById("title").innerHTML = "موهيتو باشن فروت";
+   document.getElementById("price2").innerHTML = "15.00 SR";
+   break;
+
+   case "cc5":
+
+   document.getElementById("myImage").src = "images/cold/mohh.jpg";
+   document.getElementById("title").innerHTML = "موهيتو أجراس";
+   document.getElementById("price2").innerHTML = "17.00 SR";
+   break;
+
+  case "cc6":
+
+   document.getElementById("myImage").src = "images/cold/khoo.jpg";
+   document.getElementById("title").innerHTML = "ايس تي خوخ";
+   document.getElementById("price2").innerHTML = "16.00 SR";
+   break;
+
+  case "ss1":
+
+   document.getElementById("myImage").src = "images/ches/mocc.jpg";
+   document.getElementById("title").innerHTML = "موس تشوكلت";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "18.00 SR";
+   break;
+
+  case "ss2":
+
+   document.getElementById("myImage").src = "images/ches/pss.jpg";
+   document.getElementById("title").innerHTML = "كيكة الفستق بالسولتد كراميل";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "27.00 SR";
+   break;
+
+
+  case "ss3":
+
+   document.getElementById("myImage").src = "images/ches/mess.jpg";
+   document.getElementById("title").innerHTML = "موس المستكه";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "19.00 SR";
+   break;
+
+  case "ss4":
+
+   document.getElementById("myImage").src = "images/ches/icee.jpg";
+   document.getElementById("title").innerHTML = "ايس برولية";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "16.00 SR";
+   break;
+
+
+  case "ss5":
+
+   document.getElementById("myImage").src = "images/ches/traa.jpg";
+   document.getElementById("title").innerHTML = "تيراميسو";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "19.00 SR";
+   break;
+
+  case "ss6":
+
+   document.getElementById("myImage").src = "images/ches/tartt.jpg";
+   document.getElementById("title").innerHTML = "تارت دبس التمر";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "14.00 SR";
+   break;
+
+  case "ss7":
+
+   document.getElementById("myImage").src = "images/ches/tott.jpg";
+   document.getElementById("title").innerHTML = "إكلير التوت";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "24.00 SR";
+   break;
+
+  case "ss8":
+
+   document.getElementById("myImage").src = "images/ches/choo.jpg";
+   document.getElementById("title").innerHTML = "إكلير التشوكلت";
+   document.getElementById("kal").innerHTML = " kal";  
+   document.getElementById("price").innerHTML = "19.00 SR";
+   break;
+   }
+
+
+
+</script>
+
+
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+
+</body>
+</html>
+
