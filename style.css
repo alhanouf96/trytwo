@@ -385,14 +385,14 @@ color:#4d4c4a;
 }
 
 .product .popup-card .close-btn{
-  color: #555;
+  color:red;
   z-index: 3;
   position: absolute;
   right: 0;
   font-size: 40px;
   margin: 20px;
   cursor: pointer;
-  top: 5%;
+  top: -10%;
   right: 2%;
 }
 
