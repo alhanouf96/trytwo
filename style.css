@@ -389,9 +389,11 @@ color:#4d4c4a;
   z-index: 3;
   position: absolute;
   right: 0;
-  font-size: 20px;
+  font-size: 40px;
   margin: 20px;
   cursor: pointer;
+  top: 5%;
+  right: 2%;
 }
 
 .product .popup-card .info h2{
